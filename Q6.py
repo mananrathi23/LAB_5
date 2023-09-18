@@ -19,3 +19,4 @@ while i < count:
             num=n
             n=temp%n  
         i += 1
+print(f"HCF of given numbers is {num}")
