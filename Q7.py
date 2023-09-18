@@ -1,8 +1,16 @@
-n=int(input("enter a number ")) 
-i=0 
-while i<n: 
-    if n>0: 
-        i+=1 
-        print(' '*(n-i) + '* '*(i)) 
-else: 
-    print("enter a positive number")
+N = int(input("Enter the positive number:"))
+if N<0:
+    print("invalid input , please enter positive values")
+else:
+     i = 1
+     while i <= N:
+       j = 1
+       while j<=N-i:
+           print(" ",end="")
+           j+=1
+       k=1
+       while k<=i:
+           print("*",end=" ")
+           k+=1
+       print()
+       i+=1
